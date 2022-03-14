@@ -21,7 +21,7 @@ public class BlogController extends HttpServlet {
         String msg = req.getParameter("message");
         User user = (User) req.getSession().getAttribute("user");
 
-        if(msg == null || msg.isBlank()){
+        if(msg == null || msg.equals("")){
             req.setAttribute("errors", "Insira uma mensagem");
             req.getRequestDispatcher("/miniblog/blog.jsp").forward(req, resp);
             return;
