@@ -1,0 +1,5 @@
+miniblog\controller\BlogController.class
+miniblog\controller\ExcluiMessageController.class
+miniblog\controller\FormController.class
+miniblog\model\BlogMessage.class
+miniblog\model\User.class
